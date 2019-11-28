@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="updatePwd" method="post">
+
+    <input type="text" th:value="${session.subject.principal}" name="name"><br>
+    请输入原密码:
+    <input type="password" name="oldPwd"/><span th:text="${error}"></span><br>
+    请输入新密码
+    <input type="password" name="password"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
